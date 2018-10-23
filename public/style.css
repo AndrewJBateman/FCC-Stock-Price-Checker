@@ -1,0 +1,26 @@
+body {
+  padding: 2px;
+  background-color: #ccf5ff;
+}
+
+#userstories li {
+ background-color: #66ff33;
+}
+
+#testForm, #testForm2 {
+  background-color: orange;
+}
+ol {list-style: none; counter-reset: li}
+
+ol li::before {content: counter(li); background-color: #66ff33; color: black;
+    display: inline-block; width: 1em; margin-left: -1.5em;
+    margin-right: 0.5em; text-align: center; direction: rtl}
+
+li {counter-increment: li}
+
+h3 {
+  color: blue;
+}
+code, input {
+ color: purple; 
+}
